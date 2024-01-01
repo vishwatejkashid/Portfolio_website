@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwatej - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: rgb(150, 69, 69);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(10,3,72);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: coral;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(59, 46, 173);
+            height: 1.5px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2rem;
+            background-color:rgb(0, 0, 0);
+
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(36, 16, 151);
+            border-color: aliceblue;
+            border-radius: 6px;
+            color: aliceblue;
+            font-size: 15px;
+
+        }
+
+        .rightSection img {
+            height: 50%;
+            width: 70%;
+            /* object-fit: cover; */
+            border-radius: 50%;
+        }
+
+        .coral {
+            color: coral;
+        }
+
+        .text-gray {
+            color: gray;
+            height: auto;
+            width: auto;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            background: white;
+            height: 93px;
+            width: 1px;
+            margin: 0 130px;
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -22px;
+            left: -2px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 15px;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 15vh;
+        }
+
+        .thirdSection h1 {
+            font-size: 1.5rem;
+        }
+
+        .forthSection {
+            padding: 50px;
+            margin: 23px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 80vw;
+        }
+
+        .certificate {
+            width: 45%;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+        }
+
+
+        .certificate h2 {
+            color: white;
+            font-size: 18px;
+        }
+
+        .certificate-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .certificate:nth-child(3),
+        .certificate:nth-child(4) {
+            margin-top: 50px;
+        }
+
+        footer {
+            background-color: rgb(10,3,72);
+
+        }
+
+        .footer-first {
+            display: flex;
+            padding: 23px 122px;
+        }
+
+        .footer-second {
+            display: flex;
+            padding: 0px 150px;
+
+        }
+
+        .footer-second ul {
+            list-style: none;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        .diploma{
+            height: auto;
+            width: auto;
+
+        }
+        .end{
+       
+        text-align: center;
+        }
+
+        .names{
+            align-items: center;
+            top: -22px;
+            left: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vishwatej Kashid's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificate">Certificates</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hi my name is <span class="coral">Vishwatej Kashid</span>
+                <div>I am an <span class="coral">Engineer</span></div>
+                <span id="element"></span>
+                <div>
+                    <a class="btn" href="./VishwatejKashidResume.pdf" target="_blank">RESUME</a>
+                </div>
+            </div>
+            <div class="rightSection">
+               </br> <img src="./Profile.jpg" Width=200 Height=300>
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="about">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Qualifications</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="./school.webp" alt="" class="image-top">
+                    <div class="vertical-title">
+                        10th - (Pass out at 2019)
+                    </div>
+                    <div class="vertical-desc">
+                        School name: S.N.B.P School
+                        <div>Result - 74.0%</div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="./diploma.webp" alt="" class="image-top" width="150px">
+                    <div class="vertical-title">
+                        Diploma - (Pass out at 2022)
+                    </div>
+                    <div class="vertical-desc">
+                        College Name: A.I.S.S.M.S Polytechnic
+                        <div>Result - 86.69%</div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="./degree.webp" alt="" class="image-top">
+                    <div class="vertical-title">
+                         BE - (Pursuing)
+                    </div>
+                    <div class="vertical-desc">
+                         College Name: Ajeenkya Dy Patil SOE
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="thirdSection" id="certificate">
+                <span class="text-gray">What I have done so far</span>
+                <h1>Certificates</h1>
+            </div>
+        </section>
+
+        <section class="forthSection">
+            <div class="certificate">
+                <h2>HTML Certificate</h2>
+                <img class="certificate-image" src="./Html.png">
+            </div>
+            <div class="certificate">
+                <h2>CSS Certificate</h2>
+                <img class="certificate-image" src="./Css.png">
+            </div>
+            <div class="certificate">
+                <h2>Javascript Certificate</h2>
+                <img class="certificate-image" src="./Javascript.png">
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="contact">
+        <div class="flex">
+            <div class="footer-first">
+                <h3>Contact Me</h3>
+
+            </div>
+            <section class="end">
+            <div class="contact-me">
+                    <h2>GET IN TOUCH</h2>
+                    <br />
+
+                    <h2 class="collab">Lets Collab and do a project</h2>
+                    <br />
+                    
+                    <a class="btn" href="mailto:vishwatejkashid18@gmail.com">
+                        <img src="./gmail.webp" width="40px" height="40px" />
+                    </a>
+
+                    <a class="btn" href="https://www.linkedin.com/in/vishwatej-kashid-5b98bb23a/">
+                        <img src="./LinkedIn.webp" width="40px" height="40px" />
+                    </a>
+
+                    <a class="btn" href="https://www.instagram.com/vishwatej_kashid">
+                        <img src="./insta.webp" width="40px" height="40px" />
+                    </a>
+
+                    <a class="btn" href="https://github.com/vishwatejkashid">
+                        <img src="./github.webp" width="40px" height="40px" />
+                    </a>
+            </div>
+            </section>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; Vishwatejportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['I am studying Artificial Intelligence & Data Science.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
